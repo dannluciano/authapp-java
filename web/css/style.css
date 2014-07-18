@@ -1,0 +1,22 @@
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+} 
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+.form-login {
+    display: inline;
+}
