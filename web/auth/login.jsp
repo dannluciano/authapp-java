@@ -6,18 +6,22 @@
 
 <%@include file="../WEB-INF/jspf/header.jspf" %>
 
-<form action="login" method="POST">
-    <div>
-        <label for="username">Username: </label>
-        <input type="text" name="username" value="" placeholder="John" required />
-    </div>
-    <div>
-        <label for="password">Password: </label>
-        <input type="password" name="password" value="" required />
-    </div>
-    <div>
-        <button type="submit">Login!</button>
-    </div>
-</form>
 
+<div class="row">
+    <div class=" col-lg-4 col-lg-offset-4">
+        <form action="<c:url value="login"/>" method="post" role="form">
+            <div class="form-group">
+                <label for="username">Username: </label>
+                <input class="form-control" type="text" name="username" value="" placeholder="John" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input class="form-control" type="password" name="password" value="" required />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
 <%@include file="../WEB-INF/jspf/footer.jspf" %>

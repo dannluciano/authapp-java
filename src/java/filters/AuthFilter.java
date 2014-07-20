@@ -21,7 +21,7 @@ public class AuthFilter implements Filter {
         HttpServletResponse res = (HttpServletResponse) response;
         
         HttpSession session = req.getSession(false);
-        if(session != null && session.getAttribute("username") != null){
+        if(session != null && session.getAttribute("currentuser") != null){
             chain.doFilter(request, response);
         } else {
             String path = request.getServletContext().getContextPath();

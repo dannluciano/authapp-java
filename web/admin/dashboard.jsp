@@ -6,6 +6,8 @@
 
 <%@include file="../WEB-INF/jspf/header.jspf" %>
 
-<h1>Admin DashBoard!</h1>
+<div class="center">
+    <h1>Admin DashBoard!</h1>
+</div>
 
 <%@include file="../WEB-INF/jspf/footer.jspf" %>
