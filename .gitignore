@@ -1,3 +1,5 @@
 build/*
 dist/*
 setup/.DS_Store
+.DS_Store
+nbproject/private/*
