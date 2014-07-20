@@ -18,6 +18,11 @@ public class UserModel implements Serializable {
     private String username;
     
     private String password;
+    
+    public UserModel() {
+        username = "";
+        password = "";
+    }
 
     public Long getId() {
         return id;

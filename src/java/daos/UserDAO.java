@@ -91,6 +91,12 @@ public class UserDAO {
 
     public boolean authenticate(String username, String password) {
         UserModel user = getUserWithUsername(username);
-        return BCrypt.checkpw(password, user.getPassword());
+        try {
+            return BCrypt.checkpw(password, user.getPassword());
+            
+        } catch (Exception e) {
+            return false;
+        }
+        
     }
 }
